@@ -1,17 +1,6 @@
-/* COLOR GUIDE
-Primary: #283c78
-Secondary: #23252d
-Highlight: #42aeff
-Highlight: #ffc654
-Off-White: #f8f8e8
-*/
-/* Import Font */
 @import url('https://fonts.googleapis.com/css?family=Kalam|Acme');
-
-*, *:before, *:after {box-sizing: border-box;} /* Box Sizing Fix */
-
 img {
-	display: block; /* Fix Whitespace under Images */
+	display: block; 
 	width: 100%;
 }
 
@@ -19,9 +8,9 @@ img {
 	text-align: center;
 }
 
-/* GENERAL */
+
 body {
-	margin: 0; /* Remove White Space at Top of Page */
+	margin: 0; 
 	color: #23252d;
 	background: #23252d;
 	font-family: 'Acme', sans-serif;
@@ -32,8 +21,6 @@ body {
 	background-color: #f8f8e8;
 	padding-left: 2.5px;
 	position: relative;
-	border: 1px solid #0063ac;
-	border-radius: 5px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -55,7 +42,7 @@ header, main, footer {
 	max-width: 1600px;
 }
 
-/* NAVIGATION*/
+
 nav {
 	background-color: #283c78;
 	margin-top: -80px;
@@ -64,131 +51,5 @@ nav {
 nav ul {
 	margin: 0;
 	padding-left: 125px;
-	display: flex;
-	flex-flow: column wrap;
-}
-nav li {
-	list-style-type: none;
-}
-nav a, nav label {
-	font-size: 1.2em;
-	display: block;
-	padding: 1em;
-	color: #f8f8e8;
-	text-decoration: none;
-}
-nav a:hover {background-color: #42aeff;}
-
-/* PAGE CONTENT */
-#content {
-	margin: 0 auto;
-	padding: 12px 0;
-	max-width: 1600px;
-	background-color: #f8f8e8;
-}
-#section-3 {
-	margin: auto;
-	max-width: 60%;
-	padding: 100px 12px;
-	text-align: center;
-}
-section {
-	padding: 12px 0;
-}
-section div {
-	padding: 12px;
-}
-section img, #logo {
-	box-shadow: 5px 5px 5px rgba(0,0,0,.5);
-}
-section img {
-	padding: 12px;
-	border: 0 solid #000;
-	border-radius: 5px;
-	background-color: #fff;
-	transform: rotate(-2.5deg);
-}
-section.dark img {
-	transform: rotate(2.5deg);
-}
-
-/* Footer */
-footer {
-	padding: 12px;
-}
-footer p {
-	margin: 12px 0;
-}
-#copyright {
-	flex: 2 auto;
-}
-#social {
-	flex: 1;
-}
-#social img {
-	float: right;
-	max-height: 55px;
-	width: 30%;
-}
-
-/* Checkbox Hack */
-nav label {
-	margin-left: 125px;
-}
-#toggle {
-	display: none;
-}
-#toggle[type=checkbox] ~ ul {
-	display: none;
-}
-#toggle[type=checkbox]:checked ~ ul {
-	display: flex;
-}
-
-/* Alternate Color for Section */
-.dark {
-	color: #f8f8e8;
-	background-color: #283c78;
-}
-
-/* A Simple Grid - Container */
-
-.flex {
-	display: flex;
-	flex-flow: column wrap;
-}
-
-/* Flex: Centered */
-.center {
-	align-items: center;
-}
-
-@media screen and (min-width: 600px) {
-	/* Hide Navigation "Button" */
-	nav label {
-		display: none;
-	}
-	/* Display Navigation */
-	#toggle[type=checkbox] ~ ul {
-		display: flex;
-		flex-flow: row wrap;
-	}
-	/* Footer */
-	footer {
-		padding: 0;
-		padding-left: 12px;
-		max-height: 55px;
-		flex-flow: row wrap;
-	}
-	/* A Simple Grid - Columns */
-	.flex {
-		flex-flow: row wrap;
-	}
-	.col-33 {width: 33%;}
-	.col-66 {width: 66%;} 
-	.col-50 {width: 50%;}
-	.col-1 {width: 100%;}
-	.flex-1 {flex: 1;}
-	.flex-2 {flex: 2;}
-	.flex-3 {flex: 3;}
+	
 }
